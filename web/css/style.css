@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'PENULLI';
+    src: url('../fonts/PENULLI.TTF');
+}
+
+html, body{
+    padding:0;
+    margin:0;
+    font-family: 'Roboto Slab', serif;
+    left: 0;
+    width: 100%;
+}
+
+.bg-img{
+    max-width: 700px;
+}
+
+.mqw-title {
+    margin-top: 20px;
+}
+
+.login-container {
+    background-image: url("../images/istockphoto-515373062-612x612.jpg");
+    position: absolute;
+    top: 0;
+    width: 100%;
+    min-height: 100%;
+    background-size: contain;
+    margin-top: 0%;
+    max-width: 700px;
+    margin: 0 auto 0 auto;
+    text-align: center;
+    padding: 5px;
+}
+
+.login-label{
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.text-input input {
+    width: 80%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    border: none;
+}
+
+.mqw-title h2{
+    font-family: 'PENULLI';
+    font-weight: 200;
+    font-size: 32px;
+    color: #ffffff;
+    margin-top: 5px;
+}
+
+
+.mqw-title span{
+    color: #ffb817;
+}
+
+img.mqw-logo {
+    width: 100%;
+    padding: 0 20px;
+    max-width: 350px;
+    margin-top: 38px;
+}
+img.hotel-logo{
+    width: 20%;
+    margin-bottom: -10px;
+    padding-top: 7px;
+    max-width: 350px;
+}
+
+.login-body .remember {
+    margin-bottom: 10px;
+    color: #ffb817;
+}
+
+.button input {
+    width: 80%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+    border-radius: 20px;
+    border: none;
+    background: #ffb817;
+    color: #ffffff;
+    margin-top: 5px;
+}
+
+.otp-msg {
+    margin-top: 5px;
+    color: #ffb817;
+    margin-bottom: 10px;
+}
+
+img.menu-logo{
+    width: 75px;
+}
+
+.menu-head{
+    margin-bottom: 10px;
+}
+
+.center-text{
+    text-align: center;
+    color: #ffb817;
+}
