@@ -1,0 +1,28 @@
+<div class="login-container">
+        <div class="login-head">
+            <img src="../../assets/images/full-logo.png" alt="" class="mqw-logo">
+            <hr style="width: 100%; color: #747474">
+            <div class="mqw-title">
+                <span class="mqw-title">Welcome to </span><br>
+                <img src="../../assets/images/TIPTOP.png" alt="" class="hotel-logo"> 
+                <h2>Clay's Cafe</h2>
+            </div>
+        </div>
+        <div class="login-body">
+            <div class="text-input">
+                <label for="fname" class="login-label">First Name</label><br>
+                <input type="text" #fname id="fname" name="fname" required>
+            </div>
+            <div class="text-input">
+                <label for="lname" class="login-label">Last Name</label><br>
+                <input type="text" #lname id="lname" name="lname" required>
+            </div>
+            <div class="text-input">
+                <label for="mob-no" class="login-label">Mobile No.</label><br>
+                <input type="tel" #mobno id="mob-no" name="mob_no" required>
+            </div>
+            <div class="button loginButton">
+                <input type="button" (click)="userdatasubmit(fname.value,lname.value,mobno.value)" [routerLink]="['/menucard']" value="Let's Order">
+            </div>
+        </div>
+    </div>

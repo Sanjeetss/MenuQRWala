@@ -1,0 +1,91 @@
+
+
+<h3 class="user-name-full"><img src="../../assets/images/user.png">  Welcome, <span>{{user_name}}</span></h3>
+
+<h2 class="title-headeing">Today's Spacial Offer</h2>
+
+<owl-carousel-o [options]="customOptions">
+    <ng-template carouselSlide><img src="../../assets/images/pulao.jpg"> <div class="caption"><span>20% off</span> on first 3 orders</div></ng-template>
+    <ng-template carouselSlide><img src="../../assets/images/biryani.jpg"> <div class="caption"><span>20% off</span> on first 3 orders</div></ng-template>
+    <ng-template carouselSlide><img src="../../assets/images/chicken biryani.jpg"> <div class="caption"><span>20% off</span> on first 3 orders</div></ng-template>
+</owl-carousel-o>
+
+
+<mat-tab-group>
+    <mat-tab label="Main Course">
+        <ul class="p-0 menulist">
+            <li class="row" *ngFor="let starter of fast_food; index as i">
+                <div class="img-thumb col-4"><img class="img-fluid" src="{{starter.imagepath}}"></div>
+                <div class="content-box col-8">
+                    <div class="row">
+                        <div class="details-box col-7 p-0">
+                            <h4 id="name_{{starter.id}}">{{starter.name}}</h4>
+                            <h5 id="price_{{starter.id}}" class="price_box">{{starter.price}}</h5>
+                            <p>{{starter.details}}</p>
+                        </div>
+                        <div class="qty-box col-5 p-0">
+                            <div class="quantity">
+                                <button (click)="decrement(starter.id)">-</button>
+                                <input type="text" value="0" min="0" max="10" id="quantity_{{starter.id}}" disabled>
+                                <button (click)="increment(starter.id)">+</button>
+                            </div>
+                            
+                            </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </mat-tab>
+    <mat-tab label="Beverage">
+        <ul class="p-0 menulist">
+            <li class="row" *ngFor="let starter of beverage; index as i">
+                <div class="img-thumb col-4"><img class="img-fluid" src="{{starter.imagepath}}"></div>
+                <div class="content-box col-8">
+                    <div class="row">
+                        <div class="details-box col-7 p-0">
+                            <h4 id="name_{{starter.id}}">{{starter.name}}</h4>
+                            <h5 id="price_{{starter.id}}" class="price_box">{{starter.price}}</h5>
+                            <p>{{starter.details}}</p>
+                        </div>
+                        <div class="qty-box col-5 p-0">
+                            <div class="quantity">
+                                <button (click)="decrement(starter.id)">-</button>
+                                <input type="text" value="0" min="0" max="10" id="quantity_{{starter.id}}" disabled>
+                                <button (click)="increment(starter.id)">+</button>
+                            </div>
+                            
+                            </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </mat-tab>
+    <mat-tab label="Appetizer">
+        <ul class="p-0 menulist">
+            <li class="row" *ngFor="let starter of appetizer; index as i">
+                <div class="img-thumb col-4"><img class="img-fluid" src="{{starter.imagepath}}"></div>
+                <div class="content-box col-8">
+                    <div class="row">
+                        <div class="details-box col-7 p-0">
+                            <h4 id="name_{{starter.id}}">{{starter.name}}</h4>
+                            <h5 id="price_{{starter.id}}" class="price_box">{{starter.price}}</h5>
+                            <p>{{starter.details}}</p>
+                        </div>
+                        <div class="qty-box col-5 p-0">
+                            <div class="quantity">
+                                <button (click)="decrement(starter.id)">-</button>
+                                <input type="text" value="0" min="0" max="10" id="quantity_{{starter.id}}" disabled>
+                                <button (click)="increment(starter.id)">+</button>
+                            </div>
+                            
+                            </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </mat-tab>
+    
+</mat-tab-group>
+
+
+<button (click)="placeorder()" class="place_order-btn" [routerLink]="['/checkout']">Submit Order</button>

@@ -1,0 +1,135 @@
+
+.quantity * {
+    border: none;
+    display: inline-block !important;
+    width: 33%;
+    text-align: center;
+}
+
+
+.owl-item {
+    position: relative;
+}
+
+.caption.ng-star-inserted {
+    font-family: 'PENULLI';
+    position: absolute;
+    width: 50%;
+    right: 0;
+    top: 0;
+    background: #0000007d;
+    height: 100%;
+    text-align: center;
+    padding: 20px 0;
+    color: #fff;
+    font-size: 36px;
+}
+
+.caption.ng-star-inserted span {
+    display: block;
+    font-weight: 700;
+    color: #fca700;
+}
+
+.quantity button {
+    background: #0d5fb3;
+    color: #fff;
+    border: none;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+button.disabled {
+    background: #c8c8c8 !important;
+}
+
+button.placeborder-btn {
+    font-size: 13px;
+    width: 100%;
+    border: none;
+    padding: 6px 0;
+    margin-top: 7px;
+    font-weight: 600;
+    color: #fff;
+    background: #0d5fb3;
+}
+
+.details-box p {
+    font-size: 12px;
+    font-weight: 500;
+    margin:0;
+}
+
+.details-box h4 {
+    font-weight: 600;
+    margin: 0;
+    color: #0d5fb3;
+    font-size: 18px;
+}
+
+.details-box h5 {
+    font-size: 15px;
+    margin-top: 4px;
+    margin-bottom: 3px;
+    font-weight: 800;
+}
+
+ul.p-0.menulist.ng-star-inserted li {
+    padding: 15px 10px 0px 10px ;
+    margin: 0;
+}
+h5.price_box:before {
+    content: "Rs ";
+}
+
+h5.price_box:after {
+    content: ".00";
+}
+button.place_order-btn {
+    margin: 10px auto 30px auto;
+    display: table;
+    width: 60%;
+    padding: 10px 20px;
+    font-size: 19px;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    background: #ffb817;
+}
+
+.img-thumb.col-4 img {
+    border-radius: 9px;
+    border: thin solid #333;
+    padding: 3px;
+}
+
+.img-thumb.col-4 {
+    padding: 0 15px 0 0;
+}
+
+h3.user-name-full {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+h3.user-name-full span {
+    display: block;
+    font-size: 23px;
+    font-weight: 700;
+    color: #0d5fb3;
+}
+
+h3.user-name-full img {
+    width: 66px;
+    display: table;
+    margin: 25px auto 20px auto;
+    border-radius: 50px;
+    border: 5px solid #eea000;
+    padding: 5px;
+}
+
+.img-fluid{
+    height: 100px !important;
+    width: 100px !important;
+}
